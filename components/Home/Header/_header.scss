@@ -1,0 +1,37 @@
+//imports
+@use "../../../styles/global/breakpoints" as b;
+@import "../../../styles/global/variables";
+
+.logo {
+  width: 180px;
+  height: auto;
+
+  @include b.breakpoint("768") {
+    width: 200px;
+  }
+}
+
+.header {
+  background-color: white;
+}
+
+.header-first-part {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+
+  .menu-items-tk {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.714);
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: all 0.2s ease-in-out;
+    margin-left: -10px;
+
+    &:hover {
+      background-color: rgba(128, 128, 128, 0.16);
+      border-radius: 7px;
+    }
+  }
+}

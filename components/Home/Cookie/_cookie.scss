@@ -1,0 +1,39 @@
+//imports
+@use "../../../styles/global/breakpoints" as b;
+@import "../../../styles/global/variables";
+
+.cookie-banner-tk {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1000;
+  background-color: transparent;
+
+  width: 90%;
+  padding: 0.7rem;
+  border-radius: 15px;
+  font-size: 15px;
+  box-shadow: 0px 80px 120px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem !important;
+
+  @include b.breakpoint("768") {
+    width: 900px;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+}
+
+.CookieConsent {
+  box-shadow: 0px 80px 120px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  align-items: center !important;
+
+  button {
+    margin: 0 0 15px 15px;
+  }
+}

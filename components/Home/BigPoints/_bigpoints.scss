@@ -1,0 +1,125 @@
+//imports
+@use "../../../styles/global/breakpoints" as b;
+@import "../../../styles/global/variables";
+
+.bigs {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: conic-gradient(
+    from 284deg at 45.1% 45.71%,
+    #e9e9e9 0deg,
+    #ffffff 189.38deg,
+    #ffffff 360deg
+  );
+
+  @include b.breakpoint("768") {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.bigpoints {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+
+  .points-elements {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+    @include b.breakpoint("768") {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include b.breakpoint("1000") {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .element {
+      background-color: $white;
+      border-radius: 15px;
+      box-shadow: 0px 80px 120px rgba(95, 95, 95, 0.15);
+      padding: 2rem 1.5rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: flex-start;
+      gap: 1rem;
+
+      &:hover {
+        box-shadow: 0px 80px 120px rgba(0, 0, 0, 0.153);
+        transition: all 0.2s;
+      }
+
+      @include b.breakpoint("768") {
+        grid-template-columns: 35px 1fr;
+        padding: 2.5rem 2rem;
+      }
+
+      .icons-wrapper {
+        position: relative;
+
+        .icons-element {
+          font-size: 25px;
+
+          @include b.breakpoint("768") {
+            position: absolute;
+            top: 0.3rem;
+            left: 0;
+            font-size: 35px;
+          }
+        }
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.7rem;
+
+        h3 {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 1.5;
+
+          @include b.breakpoint("768") {
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+        p {
+          font-weight: 400;
+          line-height: 1.8;
+          font-size: 14px;
+
+          @include b.breakpoint("768") {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  button {
+    width: fit-content;
+  }
+}
+
+.services-heading {
+  font-size: 23px;
+  line-height: 1.1;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  z-index: 10;
+
+  @include b.breakpoint("768") {
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+
+  span {
+    color: $accent;
+  }
+}

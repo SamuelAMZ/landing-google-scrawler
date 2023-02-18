@@ -1,0 +1,70 @@
+//imports
+@use "../../../styles/global/breakpoints" as b;
+@import "../../../styles/global/variables";
+
+.faq {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  background-color: white;
+
+  @include b.breakpoint("768") {
+    padding-top: 7rem;
+    padding-bottom: 10rem;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+
+    @include b.breakpoint("768") {
+      font-size: 42px;
+    }
+  }
+
+  .tab-faq-content {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+    @include b.breakpoint("1000") {
+      width: 800px;
+    }
+  }
+
+  .tabs-elements {
+    display: flex;
+    flex-direction: column;
+    // gap: 0.2rem;
+
+    .faq-details {
+      border-radius: 15px;
+      box-shadow: 0px 80px 120px rgba(0, 0, 0, 0.15);
+      padding: 0.5rem;
+    }
+
+    .collapse-title {
+      background-color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+
+      @include b.breakpoint("768") {
+        font-size: 17px;
+      }
+    }
+    .collapse-content {
+      background-color: #f4f4f4;
+      font-size: 13px;
+
+      @include b.breakpoint("768") {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.link {
+  color: $accent;
+  font-weight: 700;
+}

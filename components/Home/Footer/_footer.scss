@@ -1,0 +1,42 @@
+//imports
+@use "../../../styles/global/breakpoints" as b;
+@import "../../../styles/global/variables";
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem !important;
+  gap: 1.5rem;
+
+  @include b.breakpoint("1000") {
+    flex-direction: row;
+    padding: 2rem !important;
+    justify-content: space-between;
+  }
+
+  .logo-site {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+
+    @include b.breakpoint("1000") {
+      align-items: flex-start;
+    }
+
+    img {
+      width: 200px;
+      height: auto;
+    }
+    p {
+      font-weight: 600;
+      font-size: 13px;
+
+      @include b.breakpoint("768") {
+        font-size: 16px;
+      }
+    }
+  }
+}

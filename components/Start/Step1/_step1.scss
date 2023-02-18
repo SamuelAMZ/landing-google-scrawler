@@ -1,0 +1,89 @@
+// imports
+@use "../../../styles/global/breakpoints" as b;
+@import "../../../styles/global/variables";
+
+.step-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5rem;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .form-elm {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+
+      h2 {
+        font-size: 17px;
+        font-weight: 700;
+      }
+
+      input {
+        border-left: 1px solid rgba(0, 0, 0, 0.785);
+      }
+
+      .input-group {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        align-items: center;
+
+        border: 1px solid rgba(0, 0, 0, 0.785);
+        border-radius: 10px;
+        overflow: hidden;
+
+        div {
+          font-size: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    .step-inputs {
+      //   width: 98%;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+
+      @include b.breakpoint("768") {
+        width: 500px;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .btn-input {
+      position: relative;
+
+      input[type="checkbox"] {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+      }
+
+      button {
+        background-color: $white;
+        justify-content: flex-start;
+        text-transform: capitalize;
+
+        h5 {
+          margin-right: 5px;
+          background-color: #f2f2f2;
+          padding: 7px;
+          border-radius: 10px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

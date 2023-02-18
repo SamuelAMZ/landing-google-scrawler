@@ -1,0 +1,140 @@
+//imports
+@use "../../../styles/global/breakpoints" as b;
+@import "../../../styles/global/variables";
+
+.review-counter {
+  background-color: #fff8fb;
+  padding: 1.5rem;
+
+  @include b.breakpoint("768") {
+    padding: 5rem;
+  }
+
+  .review-counter-wraper {
+    width: 100%;
+    box-shadow: 0px 80px 120px rgba(0, 0, 0, 0.15);
+
+    background: conic-gradient(
+      from 275deg at 970.36% 70.18%,
+      #ffc2dc 316deg,
+      #3961ff 81deg
+    );
+
+    border-radius: 16px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 1rem;
+    text-align: center;
+
+    @include b.breakpoint("1000") {
+      grid-template-columns: 402px 1fr;
+      padding: 4rem;
+      text-align: start;
+      gap: 80px;
+
+      background: conic-gradient(
+        from 275deg at 80.36% 70.18%,
+        #ffc2dc 105deg,
+        #3961ff 271deg
+      );
+    }
+
+    .bigtexts {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: space-between;
+
+      @include b.breakpoint("768") {
+        gap: 3rem;
+      }
+
+      h2 {
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 1.2;
+
+        &:last-child {
+          @include b.breakpoint("1000") {
+            color: $white;
+          }
+        }
+
+        @include b.breakpoint("768") {
+          font-size: 42px;
+        }
+      }
+    }
+
+    .reviews-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      align-items: center;
+
+      @include b.breakpoint("1000") {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem;
+      }
+
+      .review-card {
+        background-color: $white;
+        padding: 1.5rem;
+        border-radius: 15px;
+        height: 184px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+
+        @include b.breakpoint("768") {
+          height: 254px;
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 0.7rem;
+          align-items: center;
+          justify-content: center;
+
+          h3 {
+            color: #000000;
+            font-size: 35px;
+            font-weight: 600;
+          }
+
+          .icons-pack {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 5px;
+            font-size: 20px;
+
+            &.stars {
+              color: #3961ff;
+            }
+            &.chess {
+              color: #e478a7;
+            }
+            &.socials {
+              color: #937cce;
+            }
+          }
+        }
+
+        p {
+          position: absolute;
+          bottom: 0.7rem;
+          font-size: 17px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

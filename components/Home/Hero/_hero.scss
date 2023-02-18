@@ -1,0 +1,101 @@
+//imports
+@use "../../../styles/global/breakpoints" as b;
+@import "../../../styles/global/variables";
+
+.hero-wraper {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 3rem;
+  position: relative;
+  z-index: 2;
+
+  @include b.breakpoint("1000") {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    gap: 4rem;
+  }
+
+  .textsHeading {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    overflow: hidden;
+
+    @include b.breakpoint("768") {
+      gap: 1.5rem;
+    }
+
+    h1 {
+      line-height: 1.3;
+      font-weight: 600;
+      font-size: 38px;
+
+      @include b.breakpoint("768") {
+        font-size: 55px;
+        line-height: 1.2;
+      }
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 17px;
+
+      @include b.breakpoint("768") {
+        font-size: 18px;
+      }
+
+      span {
+        color: $accent;
+        font-weight: 700;
+      }
+    }
+    button {
+      @include b.breakpoint("1000") {
+        width: fit-content;
+      }
+    }
+  }
+
+  .hero-image {
+    img {
+      box-shadow: 0px 80px 120px rgba(0, 0, 0, 0.15);
+      border-radius: 40px;
+    }
+  }
+}
+
+.background-element {
+  position: absolute;
+  top: 5.5rem;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 100%;
+  height: 2270px;
+  background: radial-gradient(
+    106.89% 106.89% at 43.19% -5.98%,
+    #ebebeb 0%,
+    #ffffff 100%
+  );
+
+  @include b.breakpoint("768") {
+    height: 2370px;
+  }
+  @include b.breakpoint("1000") {
+    height: 1390px;
+  }
+}
+
+// slide animation
+.elements-anim {
+  display: inline-block;
+  margin-left: 10px;
+  color: $accent;
+
+  @include b.breakpoint("768") {
+    margin-left: 15px;
+  }
+}
