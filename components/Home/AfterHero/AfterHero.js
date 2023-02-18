@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 // icons
 import { BsPeopleFill, BsFillBarChartFill } from "react-icons/bs";
-import { MdPrivacyTip } from "react-icons/md";
+import { BiTimeFive } from "react-icons/bi";
 
 const AfterHero = () => {
   return (
@@ -81,6 +81,24 @@ const AfterHero = () => {
           className="tag-item"
           initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.7 }}
+        >
+          <div className="svg-item svg-2">
+            <BsFillBarChartFill />
+          </div>
+
+          <h2>Increase revenue.</h2>
+          <p>
+            Experience a <span> 5x return on investment on average</span> by
+            turning leaked views into paying customers. Let Takedownly help you
+            achieve your financial goals faster.
+          </p>
+        </motion.div>
+
+        <motion.div
+          className="tag-item"
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
           <div className="svg-item">
@@ -105,7 +123,7 @@ const AfterHero = () => {
           transition={{ duration: 0.9 }}
         >
           <div className="svg-item svg-3">
-            <MdPrivacyTip />
+            <BiTimeFive />
           </div>
 
           <h2>Save time.</h2>
@@ -116,24 +134,6 @@ const AfterHero = () => {
             and responding to your leaked content so you can spend your time on
             what really matters: growing your business and reaching your
             financial goals.
-          </p>
-        </motion.div>
-
-        <motion.div
-          className="tag-item"
-          initial={{ y: 100, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.7 }}
-        >
-          <div className="svg-item svg-2">
-            <BsFillBarChartFill />
-          </div>
-
-          <h2>Increase revenue.</h2>
-          <p>
-            Experience a <span> 5x return on investment on average</span> by
-            turning leaked views into paying customers. Let Takedownly help you
-            achieve your financial goals faster.
           </p>
         </motion.div>
       </div>
