@@ -94,7 +94,9 @@ const Pricing = () => {
                     <AiFillCheckCircle /> <p>Anonymity</p>{" "}
                   </li>
                 </ul>
-                <button className="btn btn-primary">Start</button>
+                <a href="https://app.takedownly.com/">
+                  <button className="btn btn-primary">Start</button>
+                </a>
               </div>
             </div>
 
@@ -145,7 +147,9 @@ const Pricing = () => {
                     <AiFillCheckCircle /> <p>5 User Names</p>{" "}
                   </li>
                 </ul>
-                <button className="btn btn-primary">Start</button>
+                <a href="https://app.takedownly.com/">
+                  <button className="btn btn-primary">Start</button>
+                </a>
               </div>
             </div>
 
@@ -188,7 +192,9 @@ const Pricing = () => {
                     <p>Organically drive traffic to your paid websites</p>{" "}
                   </li>
                 </ul>
-                <button className="btn btn-primary pro-btn">Start</button>
+                <a href="https://app.takedownly.com/">
+                  <button className="btn btn-primary">Start</button>
+                </a>
               </div>
             </div>
           </div>
