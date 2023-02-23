@@ -68,8 +68,8 @@ const privacyPolicy = () => {
           We recommend that you review this page periodically to stay informed
           about our privacy practices. If you have any questions or concerns
           about our Privacy Policy, please contact us at{" "}
-          <a href="mailto:support@takedownly.com" className="link">
-            support@takedownly.com
+          <a href="mailto:contact@takedownly.com" className="link">
+            contact@takedownly.com
           </a>{" "}
           .
         </p>

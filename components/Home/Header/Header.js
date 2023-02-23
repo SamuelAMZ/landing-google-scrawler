@@ -85,17 +85,23 @@ const Header = () => {
             </div>
           </div>
 
-          {/* action button */}
-          <Link href="/start">
-            <button className="btn btn-outline btn-primary hidden md:block">
-              free content review
-            </button>
-          </Link>
-          <Link href="/start">
-            <button className="btn btn-outline btn-primary block md:hidden">
-              START
-            </button>
-          </Link>
+          {/* action buttons */}
+          <div className="header-second-part">
+            <a href="https://app.takedownly.com/">
+              <p>Sign in</p>
+            </a>
+
+            <Link href="/start">
+              <button className="btn btn-outline btn-primary hidden md:block">
+                free content review
+              </button>
+            </Link>
+            <Link href="/start">
+              <button className="btn btn-outline btn-primary block md:hidden">
+                START
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
 

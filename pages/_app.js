@@ -10,6 +10,9 @@ import { QueryClient, QueryClientProvider } from "react-query";
 // live chat widget
 import { Crisp } from "crisp-sdk-web";
 
+// google analytics
+import { GoogleAnalytics } from "nextjs-google-analytics";
+
 // contexts
 import { StartFormProvider } from "../contexts/StartFormContext";
 import { StartProvider } from "../contexts/StartContext";
@@ -25,6 +28,8 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <GoogleAnalytics trackPageViews />
+
       <QueryClientProvider client={client}>
         <StartFormProvider>
           <StartProvider>
