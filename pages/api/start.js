@@ -923,7 +923,7 @@ export default async function handler(req, res) {
       {
         personalizations: [
           {
-            to: [{ email: "samueldevpro09@gmail.com", name: "Takedownly" }],
+            to: [{ email: "joe@takedownly.com", name: "Takedownly" }],
             subject: "Takedownly new content review request",
           },
         ],
