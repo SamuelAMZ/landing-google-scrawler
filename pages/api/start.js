@@ -52,7 +52,7 @@ export default async function handler(req, res) {
       ><![endif]-->
       <!--[if !mso]><!-->
       <link
-        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
         rel="stylesheet"
         type="text/css"
       />
@@ -416,7 +416,7 @@ export default async function handler(req, res) {
                                       style="line-height: 10px"
                                     >
                                       <img
-                                        src="https://d15k2d11r6t6rl.cloudfront.net/public/users/BeeFree/beefree-u27jfci5cc/logo.png"
+                                        src="https://takedownly.com/static/img/logo.png"
                                         style="
                                           display: block;
                                           height: auto;
@@ -455,10 +455,7 @@ export default async function handler(req, res) {
                                           mso-line-height-alt: 18px;
                                           color: #555555;
                                           line-height: 1.5;
-                                          font-family: Space Mono, monospace,
-                                            Trebuchet MS, Lucida Grande,
-                                            Lucida Sans Unicode, Lucida Sans,
-                                            Tahoma, sans-serif;
+                                          font-family: Poppins, sans-serif;
                                         "
                                       >
                                         <p
@@ -557,10 +554,7 @@ export default async function handler(req, res) {
                                           mso-line-height-alt: 14.399999999999999px;
                                           color: #0d0d0d;
                                           line-height: 1.2;
-                                          font-family: Space Mono, monospace,
-                                            Trebuchet MS, Lucida Grande,
-                                            Lucida Sans Unicode, Lucida Sans,
-                                            Tahoma, sans-serif;
+                                          font-family: Poppins, sans-serif;
                                         "
                                       >
                                         <p
@@ -612,16 +606,14 @@ export default async function handler(req, res) {
                                   >
                                     <div
                                       style="
-                                        font-family: Space Mono, monospace,
-                                          Verdana, sans-serif;
+                                      font-family: Poppins, sans-serif;
                                       "
                                     >
                                       <div
                                         class
                                         style="
                                           font-size: 12px;
-                                          font-family: Space Mono, monospace,
-                                            Tahoma, Verdana, Segoe, sans-serif;
+                                          font-family: Poppins, sans-serif;
                                           mso-line-height-alt: 18px;
                                           color: #0d0d0d;
                                           line-height: 1.5;
@@ -637,19 +629,19 @@ export default async function handler(req, res) {
                                           "
                                         >
                                           <li style="text-align: left">
-                                            <span style="font-size: 16px"
+                                            <span style="font-size: 14px"
                                               ><u>Platforms</u>:
                                               ${platforms}</span
                                             >
                                           </li>
                                           <li style="text-align: left">
-                                            <span style="font-size: 16px"
+                                            <span style="font-size: 14px"
                                               ><u>UserName:</u>:
                                               ${data.stepData.username}
                                             </span>
                                           </li>
                                           <li style="text-align: left">
-                                            <span style="font-size: 16px"
+                                            <span style="font-size: 14px"
                                               ><u>Email:</u>:
                                               <a
                                                 href="mailto:${data.stepData.email}"
@@ -658,19 +650,19 @@ export default async function handler(req, res) {
                                             </span>
                                           </li>
                                           <li style="text-align: left">
-                                            <span style="font-size: 16px"
+                                            <span style="font-size: 14px"
                                               ><u>FirstName:</u>:
                                               ${data.contactData.firstname}</span
                                             >
                                           </li>
                                           <li style="text-align: left">
-                                            <span style="font-size: 16px"
+                                            <span style="font-size: 14px"
                                               ><u>LastName:</u>:
                                               ${data.contactData.lastname}</span
                                             >
                                           </li>
                                           <li style="text-align: left">
-                                            <span style="font-size: 16px"
+                                            <span style="font-size: 14px"
                                               ><u>LinkTree:</u>:
                                               <a
                                                 href="${data.contactData.linktree}"
@@ -679,14 +671,13 @@ export default async function handler(req, res) {
                                             >
                                           </li>
                                           <li style="text-align: left">
-                                            <span style="font-size: 16px"
+                                            <span style="font-size: 14px"
                                               ><u>Message:</u>:
-                                              ${data.contactData.message}, sit
-                                              ame</span
+                                              ${data.contactData.message}</span
                                             >
                                           </li>
                                           <li style="text-align: left">
-                                            <span style="font-size: 16px"
+                                            <span style="font-size: 14px"
                                               ><u>Date of submission:</u>:
                                               ${data.date}</span
                                             >
@@ -932,7 +923,7 @@ export default async function handler(req, res) {
       {
         personalizations: [
           {
-            to: [{ email: "joe@takedownly.com", name: "Takedownly" }],
+            to: [{ email: "samueldevpro09@gmail.com", name: "Takedownly" }],
             subject: "Takedownly new content review request",
           },
         ],
