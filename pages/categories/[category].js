@@ -9,7 +9,7 @@ import BlogHead from "../../components/Blog/BlogHead/BlogHead";
 import BlogContent from "../../components/Blog/BlogContent/BlogContent";
 import BlogSidebar from "../../components/Blog/BlogSidebar/BlogSidebar";
 
-const blog = () => {
+const category = () => {
   const router = useRouter();
   const { category } = router.query;
 
@@ -31,4 +31,4 @@ const blog = () => {
   );
 };
 
-export default blog;
+export default category;
