@@ -85,14 +85,16 @@ const Header = () => {
                 </a>
               </div>
               <div className="menu-items-tk">
-                <Link href={"/blog"}>Blog</Link>
+                <Link href={"/blog"}>
+                  <a className="hidden md:block">Blog</a>
+                </Link>
               </div>
             </div>
           </div>
 
           {/* action buttons */}
           <div className="header-second-part">
-            <a href="https://app.takedownly.com/">
+            <a className="hidden md:block" href="https://app.takedownly.com/">
               <p>Sign in</p>
             </a>
 

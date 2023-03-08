@@ -154,16 +154,17 @@ p {
 .blog-content {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 4rem;
+  gap: 2rem;
 
   margin-bottom: 2rem;
-  padding: 2rem;
+  padding: 2rem 1rem;
 
   // @include b.breakpoint("768") {
   //   grid-template-columns: 2.5fr 1fr;
   //   padding: 5rem 0;
   // }
   @include b.breakpoint("1000") {
+    gap: 4rem;
     grid-template-columns: 2.5fr 1fr;
     padding: 5rem 0;
   }
