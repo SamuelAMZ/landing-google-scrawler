@@ -2,6 +2,10 @@
 @use "../../../styles/global/breakpoints" as b;
 @import "../../../styles/global/variables";
 
+.footer-wrapper {
+  background-color: #ffffff9d;
+  margin-bottom: -2.5rem;
+}
 .footer-container {
   display: flex;
   flex-direction: column;

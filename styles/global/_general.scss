@@ -150,3 +150,44 @@ p {
     font-weight: 700;
   }
 }
+
+.blog-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+
+  margin-bottom: 2rem;
+  padding: 2rem;
+
+  // @include b.breakpoint("768") {
+  //   grid-template-columns: 2.5fr 1fr;
+  //   padding: 5rem 0;
+  // }
+  @include b.breakpoint("1000") {
+    grid-template-columns: 2.5fr 1fr;
+    padding: 5rem 0;
+  }
+}
+
+.blog-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.blog-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.blog-pagination {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.pag-btn {
+  font-size: 20px !important;
+}

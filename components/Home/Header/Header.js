@@ -78,10 +78,15 @@ const Header = () => {
               </a>
             </Link>
 
-            <div className="menu-items-tk">
-              <a className="hidden md:block" href="/#pricing">
-                Pricing
-              </a>
+            <div className="menu-items-wraper">
+              <div className="menu-items-tk">
+                <a className="hidden md:block" href="/#pricing">
+                  Pricing
+                </a>
+              </div>
+              <div className="menu-items-tk">
+                <Link href={"/blog"}>Blog</Link>
+              </div>
             </div>
           </div>
 

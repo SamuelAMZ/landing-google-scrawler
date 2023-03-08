@@ -21,6 +21,13 @@
   gap: 2rem;
   align-items: center;
 
+  .menu-items-wraper {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+
   .menu-items-tk {
     font-size: 15px;
     color: rgba(0, 0, 0, 0.714);
