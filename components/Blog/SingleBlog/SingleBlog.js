@@ -70,7 +70,7 @@ const SingleBlog = () => {
         <span className="single-blog-sep"></span>
         {/* body */}
         <div className="single-blog-body-content">
-          <ReactMarkdown children={blogPost?.data[0]?.attributes?.body} />
+          <ReactMarkdown>{blogPost?.data[0]?.attributes?.body}</ReactMarkdown>
         </div>
         {/* action */}
         <div className="single-blog-action">
