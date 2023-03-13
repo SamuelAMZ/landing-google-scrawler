@@ -8,9 +8,13 @@
   gap: 1.5rem;
   background-color: #fff;
   box-shadow: 0 10px 10px 10px rgba(34, 34, 34, 0.071);
-  padding: 1.3rem;
+  padding: 1rem;
   border-radius: 15px;
   position: relative;
+
+  @include b.breakpoint("768") {
+    padding: 1.3rem;
+  }
 
   img {
     width: 100%;
@@ -48,7 +52,11 @@
   }
 
   .blog-card-content {
-    margin-top: -1.5rem;
+    margin-top: -2.2rem;
+
+    @include b.breakpoint("768") {
+      margin-top: -2rem;
+    }
   }
 
   .blog-card-content {
