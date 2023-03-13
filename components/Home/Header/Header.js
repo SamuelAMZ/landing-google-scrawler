@@ -4,12 +4,15 @@ import { useRouter } from "next/router";
 
 // contexts
 import StartFormContext from "../../../contexts/StartFormContext";
+import MobileMenuContext from "../../../contexts/MobileMenuContext";
 
 // icons
 import { IoIosArrowUp } from "react-icons/io";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 // components
 import Cookie from "../Cookie/Cookie";
+import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   const [isAnim, setIsAnim] = useState(false);
@@ -17,6 +20,7 @@ const Header = () => {
 
   // context
   const { data, changeData } = useContext(StartFormContext);
+  const { mobileMenu, changeMobileMenu } = useContext(MobileMenuContext);
 
   // reset steps
   useEffect(() => {
@@ -103,11 +107,17 @@ const Header = () => {
                 free content review
               </button>
             </Link>
-            <Link href="/start">
+            {/* <Link href="/start">
               <button className="btn btn-outline btn-primary block md:hidden">
                 START
               </button>
-            </Link>
+            </Link> */}
+            {/* hanburger menu */}
+            <GiHamburgerMenu
+              className="jd-menu-hamburger block md:hidden"
+              onClick={() => changeMobileMenu(!mobileMenu)}
+            />
+            {mobileMenu && <MobileMenu />}
           </div>
         </div>
       </div>

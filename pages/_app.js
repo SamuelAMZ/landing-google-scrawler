@@ -16,6 +16,7 @@ import { GoogleAnalytics } from "nextjs-google-analytics";
 // contexts
 import { StartFormProvider } from "../contexts/StartFormContext";
 import { StartProvider } from "../contexts/StartContext";
+import { MobileMenuProvider } from "../contexts/MobileMenuContext";
 
 function MyApp({ Component, pageProps }) {
   // load crisp chat widget
@@ -32,9 +33,11 @@ function MyApp({ Component, pageProps }) {
 
       <QueryClientProvider client={client}>
         <StartFormProvider>
-          <StartProvider>
-            <Component {...pageProps} />;
-          </StartProvider>
+          <MobileMenuProvider>
+            <StartProvider>
+              <Component {...pageProps} />;
+            </StartProvider>
+          </MobileMenuProvider>
         </StartFormProvider>
       </QueryClientProvider>
     </>
